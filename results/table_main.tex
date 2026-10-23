@@ -1,0 +1,17 @@
+\begin{tabular}{lcccccc}
+\toprule
+Decoder & \multicolumn{2}{c}{CR $=0.25$} & \multicolumn{2}{c}{CR $=0.5$} & \multicolumn{2}{c}{CR $=0.75$} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+ & PRD (\%) & SNR (dB) & PRD (\%) & SNR (dB) & PRD (\%) & SNR (dB) \\
+\midrule
+ISTA ($\ell_1$, wavelet) & 7.84$^{\ast}$ & 23.42 & 14.00$^{\ast}$ & 18.01 & 44.68$^{\ast}$ & 7.67 \\
+FISTA ($\ell_1$, wavelet) & 4.75$^{\ast}$ & 28.09 & 9.50$^{\ast}$ & 21.75 & 33.46$^{\ast}$ & 10.29 \\
+OMP (wavelet) & 6.00$^{\ast}$ & 26.50 & 10.52$^{\ast}$ & 21.43 & 35.46$^{\ast}$ & 10.84 \\
+K-SVD + OMP~\cite{aharon2006ksvd} & 4.24$^{\ast}$ & 29.27 & 7.12$^{\ast}$ & 24.73 & 15.73$^{\ast}$ & 17.10 \\
+BSBL-EM~\cite{zhang2013fetal} & \textbf{2.85$^{\ast}$} & \textbf{32.98} & 4.54$^{\ast}$ & 28.45 & 13.50 & 18.95 \\
+\midrule
+Hua \emph{et al.}~\cite{hua2022} (fixed $\Phi$) & 3.45$^{\ast}$ & 30.96 & \textbf{4.51$^{\ast}$} & \textbf{28.63} & 9.73$^{\ast}$ & 21.54 \\
+Dilated unrolled~\cite{erkoc2026} & 3.22$^{\ast}$ & 31.45 & 4.62$^{\ast}$ & 28.27 & \textbf{8.85$^{\ast}$} & \textbf{22.41} \\
+ISTA-Net$^+$ (unrolled)~\cite{zhang2018} & 6.32 & 25.42 & 6.31 & 25.51 & 12.26 & 19.39 \\
+\bottomrule
+\end{tabular}

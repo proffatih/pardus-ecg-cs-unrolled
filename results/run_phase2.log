@@ -1,0 +1,140 @@
+=== PHASE2 START 2026-10-09T08:57:45+03:00 ===
+>>> [1/3] learned decoders, early stopping, 5 folds
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  CR=0.25 M=192: lam_ISTA=0.04 lam_FISTA=0.005
+    trained istanet: 858s (152856 params, 59 epochs run, best@46)
+Traceback (most recent call last):
+  File "/home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/code_v2/run_cv.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "/home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/code_v2/run_cv.py", line 139, in main
+    net, _ = L.train_model(net, Xfit, Phi, epochs=args.epochs,
+             ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           dev=dev, seed=args.seed, quant_bits=bits,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           patience=args.patience,
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+                           max_epochs=args.max_epochs)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/code_v2/learned2.py", line 301, in train_model
+    out = model(yv)
+  File "/home/pardus/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/pardus/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/code_v2/learned2.py", line 188, in forward
+    h, _ = self.lstm(h.transpose(1, 2))                      # (B,N,H)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/pardus/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/pardus/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pardus/miniconda3/lib/python3.13/site-packages/torch/nn/modules/rnn.py", line 1124, in forward
+    result = _VF.lstm(
+        input,
+    ...<7 lines>...
+        self.batch_first,
+    )
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 0 has a total capacity of 7.78 GiB of which 1.89 GiB is free. Process 454223 has 5.10 GiB memory in use. Including non-PyTorch memory, this process has 760.00 MiB memory in use. Of the allocated memory 555.93 MiB is allocated by PyTorch, and 20.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    rc=1 2026-10-09T09:13:32+03:00
+>>> [2/3] sensing-matrix variability with the corrected step size
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  CR=0.25 M=192: lam_ISTA=0.06 lam_FISTA=0.005
+    trained istanet: 600s (152856 params, 43 epochs run, best@30)
+    rec 103 done (1016s elapsed)
+    rec 220 done (1034s elapsed)
+    rec 106 done (1051s elapsed)
+    rec 123 done (1071s elapsed)
+    rec 203 done (1090s elapsed)
+    rec 215 done (1112s elapsed)
+    rec 115 done (1133s elapsed)
+    rec 101 done (1153s elapsed)
+    rec 202 done (1170s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 339s (152856 params, 48 epochs run, best@35)
+    rec 103 done (1564s elapsed)
+    rec 220 done (1589s elapsed)
+    rec 106 done (1615s elapsed)
+    rec 123 done (1641s elapsed)
+    rec 203 done (1668s elapsed)
+    rec 215 done (1696s elapsed)
+    rec 115 done (1721s elapsed)
+    rec 101 done (1748s elapsed)
+    rec 202 done (1775s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.06
+    trained istanet: 341s (152856 params, 48 epochs run, best@35)
+    rec 103 done (2164s elapsed)
+    rec 220 done (2186s elapsed)
+    rec 106 done (2208s elapsed)
+    rec 123 done (2230s elapsed)
+    rec 203 done (2253s elapsed)
+    rec 215 done (2275s elapsed)
+    rec 115 done (2298s elapsed)
+    rec 101 done (2320s elapsed)
+    rec 202 done (2343s elapsed)
+
+TOTAL 2343s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics_es.csv
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  CR=0.25 M=192: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 207s (152856 params, 29 epochs run, best@16)
+    rec 103 done (261s elapsed)
+    rec 220 done (278s elapsed)
+    rec 106 done (295s elapsed)
+    rec 123 done (313s elapsed)
+    rec 203 done (329s elapsed)
+    rec 215 done (349s elapsed)
+    rec 115 done (366s elapsed)
+    rec 101 done (385s elapsed)
+    rec 202 done (402s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.2 lam_FISTA=0.02
+    trained istanet: 199s (152856 params, 28 epochs run, best@15)
+    rec 103 done (656s elapsed)
+    rec 220 done (681s elapsed)
+    rec 106 done (707s elapsed)
+    rec 123 done (733s elapsed)
+    rec 203 done (759s elapsed)
+    rec 215 done (787s elapsed)
+    rec 115 done (811s elapsed)
+    rec 101 done (838s elapsed)
+    rec 202 done (864s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.12
+    trained istanet: 185s (152856 params, 26 epochs run, best@13)
+    rec 103 done (1096s elapsed)
+    rec 220 done (1118s elapsed)
+    rec 106 done (1139s elapsed)
+    rec 123 done (1162s elapsed)
+    rec 203 done (1184s elapsed)
+    rec 215 done (1207s elapsed)
+    rec 115 done (1229s elapsed)
+    rec 101 done (1252s elapsed)
+    rec 202 done (1274s elapsed)
+
+TOTAL 1274s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics_es.csv
+    rc=0 2026-10-09T10:13:52+03:00
+>>> [3/3] quantisation / energy re-run (sparse binary was diverging)
+== (A)+(B) quantisation / energy / complexity ==
+  CR=0.75 gaussian      bits=None PRDN= 10.04 rate=   2902 bps
+  CR=0.75 gaussian      bits=12   PRDN= 13.84 rate=   1102 bps
+  CR=0.75 gaussian      bits=10   PRDN= 13.81 rate=    922 bps
+  CR=0.75 gaussian      bits=8    PRDN= 13.87 rate=    742 bps
+  CR=0.75 gaussian      bits=6    PRDN= 13.90 rate=    562 bps
+  CR=0.75 gaussian      bits=4    PRDN= 15.85 rate=    382 bps
+  CR=0.75 bernoulli     bits=None PRDN= 12.40 rate=   2902 bps
+  CR=0.75 bernoulli     bits=12   PRDN= 12.43 rate=   1102 bps
+  CR=0.75 bernoulli     bits=10   PRDN= 12.45 rate=    922 bps
+  CR=0.75 bernoulli     bits=8    PRDN= 10.06 rate=    742 bps
+  CR=0.75 bernoulli     bits=6    PRDN= 12.66 rate=    562 bps
+  CR=0.75 bernoulli     bits=4    PRDN= 16.19 rate=    382 bps
+  CR=0.75 sparse_binary bits=None PRDN= 14.26 rate=   2902 bps
+  CR=0.75 sparse_binary bits=12   PRDN= 15.72 rate=   1102 bps
+  CR=0.75 sparse_binary bits=10   PRDN= 14.15 rate=    922 bps
+  CR=0.75 sparse_binary bits=8    PRDN= 16.86 rate=    742 bps
+  CR=0.75 sparse_binary bits=6    PRDN= 15.30 rate=    562 bps
+  CR=0.75 sparse_binary bits=4    PRDN= 18.96 rate=    382 bps
+    rc=0 2026-10-09T12:02:55+03:00
+=== PHASE2 DONE 2026-10-09T12:02:55+03:00 ===

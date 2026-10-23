@@ -1,58 +1,59 @@
-# Deep-Unrolled Compressed Sensing for Low-Power ECG Reconstruction in Wearable Telemetry
+# A Record-Wise Benchmark of Classical, Bayesian and Learned Decoders for Compressed-Sensing ECG
 
 Reproducibility archive for the manuscript
 
-> **Deep-Unrolled Compressed Sensing for Low-Power ECG Reconstruction in Wearable Telemetry**
+> **A Record-Wise Benchmark of Classical, Bayesian and Learned Decoders for Compressed-Sensing ECG**
 > Fatih Gül, Department of Electrical and Electronics Engineering, Department of Biomedical
 > Engineering, and the Artificial Intelligence and Internet of Things Research Laboratory,
 > Recep Tayyip Erdoğan University, Rize, Türkiye
-> (ORCID [0000-0001-5072-2122](https://orcid.org/0000-0001-5072-2122)) — *under peer review, 2026*
+> (ORCID [0000-0001-5072-2122](https://orcid.org/0000-0001-5072-2122)) — *under review, 2026*
 
-All signals are **real recordings** from the public MIT-BIH Arrhythmia Database
-(PhysioNet, channel 0 / MLII). No synthetic or simulated ECG is used. The train/test
-split is **record-wise (subject-disjoint)**, so no window from a test record is ever seen
-during training.
+All signals are **real public recordings**: the MIT-BIH Arrhythmia Database (44 non-paced records;
+102, 104, 107 and 217 excluded) and the PTB Diagnostic ECG Database, both downloaded from
+PhysioNet by the scripts. Splits are **record-wise (subject-disjoint)**.
 
-## Contents
+## What this reproduces
+
+Nine decoders receive the identical measurement operator, compression ratios and evaluation
+windows: wavelet-domain ISTA and FISTA, OMP, OMP over a K-SVD dictionary learned from the
+training records, BSBL (EM, DCT domain), ISTA-Net+, and re-implementations of two published deep
+CS-ECG decoders. Five-fold record-wise cross-validation, three training seeds per learned
+decoder, paired Wilcoxon tests across records, quantised and multiplier-free acquisition, a
+cross-database test on PTB, and two clinical endpoints (QRS detection and ST-segment morphology).
 
 | Path | Description |
 |---|---|
-| `code/prepare_data.py` | Downloads/loads MIT-BIH records via `wfdb`, z-normalises per record, segments into non-overlapping windows of N = 256 samples (~0.71 s at 360 Hz), record-wise train/test split |
-| `code/cs_common.py` | Shared settings: window length, compression ratios, random Gaussian sensing matrix, PRD/SNR metrics |
-| `code/classical.py` | Wavelet-domain ℓ1 recovery (ISTA) and Orthogonal Matching Pursuit baselines |
-| `code/learned.py` | ISTA-Net-style unrolled proximal-gradient network (PyTorch) and its training loop |
-| `code/run_experiment.py` | Main sweep over compression ratios 25 / 50 / 75 % → `results/metrics_by_cr.csv`, `results/examples_cr050.npz` |
-| `code/make_figures.py` | Regenerates both paper figures from the result files |
-| `results/metrics_by_cr.csv` | Every number reported in Table I |
-| `results/run_log.txt` | Full console log of the reported run (22 851 train / 12 695 test windows) |
-| `figures/*.{pdf,png}` | Figures 2 and 3 of the paper |
+| `code/prepare_data2.py` | PhysioNet to per-record windows (N = 256, per-record z-norm) |
+| `code/classical2.py` | ISTA, FISTA, OMP, K-SVD dictionary, BSBL-EM (DCT domain) |
+| `code/classical_gpu.py` | batched GPU BSBL (18x faster, numerically identical to 1e-9; `selftest()`) |
+| `code/learned2.py` | ISTA-Net+, Hua'22 re-implementation, dilated unrolled decoder |
+| `code/run_cv3.py` | main benchmark: common evaluation windows, saved models, QRS endpoint |
+| `code/qrs_eval.py`, `code/morph_eval.py` | clinical endpoints (beat detection, ST level) |
+| `code/stats_v2.py` | paired signed-rank tests, Holm correction, bootstrap intervals |
+| `results/` | every result file the manuscript and its tables are built from |
 
-## Reproducing every number
+## Reproducing
 
 ```bash
-python3 -m pip install numpy scipy scikit-learn matplotlib torch pywavelets wfdb
+python3 -m pip install numpy scipy scikit-learn matplotlib torch pywavelets wfdb pandas
 cd code
-python3 prepare_data.py      # MIT-BIH -> ../data/*.npy   (record-wise split)
-python3 run_experiment.py    # ISTA / OMP / ISTA-Net at CR = 0.25, 0.50, 0.75
-python3 make_figures.py      # ../figures/*.pdf and *.png
+python3 prepare_data2.py     # PhysioNet -> windows
+bash    run_phase4.sh        # cross-validation + clinical endpoints
+bash    run_phase5.sh        # seed replicates
+python3 stats_v2.py          # paired tests and tables
+python3 make_figures2.py     # figures
 ```
 
-Seeds are fixed, so `results/metrics_by_cr.csv` and both figures are reproduced bit-for-bit.
-The reported run used one GPU (`device=cuda`); CPU-only execution gives the same numbers,
-only slower.
+Seeds are fixed; `results/cv_final.csv`, `cv3_qrs.csv` and `morph.csv` are reproduced from
+scratch by the pipeline.
 
 ## Headline result
 
-| Compression | ISTA-ℓ1 PRD | OMP PRD | **ISTA-Net PRD** | ISTA-Net SNR |
-|---|---|---|---|---|
-| 25 % | 6.52 | 5.04 | **5.53** | 25.93 dB |
-| 50 % | 12.84 | 9.73 | **7.27** | 23.51 dB |
-| 75 % | 54.35 | 35.93 | **11.43** | 19.50 dB |
+Learning is not uniformly better. A correctly tuned block-sparse Bayesian decoder is the best
+method at light and moderate compression, and at CR = 0.75 it is statistically indistinguishable
+from the canonical unrolled network once training variability is accounted for. The two published
+architectures beat that network at every ratio and are far more stable across seeds.
 
 ## License
 
-Code released under the MIT License; results and figures under CC BY 4.0.
-
-## Citation
-
-If you use this archive, please cite the manuscript above (citation updated on acceptance).
+Code under the MIT License; results and figures under CC BY 4.0.

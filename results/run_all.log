@@ -1,0 +1,763 @@
+=== START 2026-10-08T21:07:31+03:00 ===
+>>> [1/5] main record-wise CV (44 records, 5 folds, 9 methods)
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  K-SVD dictionary: 25s
+  CR=0.25 M=192: lam_ISTA=0.04 lam_FISTA=0.005
+    trained istanet: 201s (152856 params)
+    trained hua: 88s (144705 params)
+    trained hua_learned: 91s (163473 params)
+    trained dilated: 86s (94860 params)
+    rec 103 done (556s elapsed)
+    rec 220 done (576s elapsed)
+    rec 106 done (597s elapsed)
+    rec 123 done (621s elapsed)
+    rec 203 done (645s elapsed)
+    rec 215 done (671s elapsed)
+    rec 115 done (694s elapsed)
+    rec 101 done (720s elapsed)
+    rec 202 done (746s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 197s (152856 params)
+    trained hua: 84s (128321 params)
+    trained hua_learned: 86s (136737 params)
+    trained dilated: 86s (94860 params)
+    rec 103 done (1259s elapsed)
+    rec 220 done (1287s elapsed)
+    rec 106 done (1316s elapsed)
+    rec 123 done (1345s elapsed)
+    rec 203 done (1373s elapsed)
+    rec 215 done (1403s elapsed)
+    rec 115 done (1431s elapsed)
+    rec 101 done (1460s elapsed)
+    rec 202 done (1489s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.08
+    trained istanet: 195s (152856 params)
+    trained hua: 84s (111937 params)
+    trained hua_learned: 86s (114097 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (1990s elapsed)
+    rec 220 done (2014s elapsed)
+    rec 106 done (2038s elapsed)
+    rec 123 done (2062s elapsed)
+    rec 203 done (2087s elapsed)
+    rec 215 done (2112s elapsed)
+    rec 115 done (2137s elapsed)
+    rec 101 done (2161s elapsed)
+    rec 202 done (2186s elapsed)
+
+=== fold 1: train 35 rec / 28000 win  | test 9 rec ===
+  K-SVD dictionary: 23s
+  CR=0.25 M=192: lam_ISTA=0.04 lam_FISTA=0.005
+    trained istanet: 196s (152856 params)
+    trained hua: 84s (144705 params)
+    trained hua_learned: 87s (163473 params)
+    trained dilated: 86s (94860 params)
+    rec 124 done (2708s elapsed)
+    rec 201 done (2729s elapsed)
+    rec 209 done (2753s elapsed)
+    rec 232 done (2776s elapsed)
+    rec 114 done (2802s elapsed)
+    rec 105 done (2821s elapsed)
+    rec 228 done (2841s elapsed)
+    rec 121 done (2861s elapsed)
+    rec 213 done (2875s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 195s (152856 params)
+    trained hua: 84s (128321 params)
+    trained hua_learned: 87s (136737 params)
+    trained dilated: 86s (94860 params)
+    rec 124 done (3379s elapsed)
+    rec 201 done (3408s elapsed)
+    rec 209 done (3438s elapsed)
+    rec 232 done (3469s elapsed)
+    rec 114 done (3499s elapsed)
+    rec 105 done (3527s elapsed)
+    rec 228 done (3556s elapsed)
+    rec 121 done (3583s elapsed)
+    rec 213 done (3604s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.08
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (111937 params)
+    trained hua_learned: 85s (114097 params)
+    trained dilated: 85s (94860 params)
+    rec 124 done (4103s elapsed)
+    rec 201 done (4128s elapsed)
+    rec 209 done (4152s elapsed)
+    rec 232 done (4177s elapsed)
+    rec 114 done (4202s elapsed)
+    rec 105 done (4227s elapsed)
+    rec 228 done (4252s elapsed)
+    rec 121 done (4277s elapsed)
+    rec 213 done (4302s elapsed)
+
+=== fold 2: train 35 rec / 28000 win  | test 9 rec ===
+  K-SVD dictionary: 23s
+  CR=0.25 M=192: lam_ISTA=0.04 lam_FISTA=0.005
+    trained istanet: 195s (152856 params)
+    trained hua: 84s (144705 params)
+    trained hua_learned: 87s (163473 params)
+    trained dilated: 85s (94860 params)
+    rec 200 done (4827s elapsed)
+    rec 210 done (4847s elapsed)
+    rec 112 done (4868s elapsed)
+    rec 221 done (4890s elapsed)
+    rec 233 done (4905s elapsed)
+    rec 122 done (4925s elapsed)
+    rec 100 done (4950s elapsed)
+    rec 205 done (4971s elapsed)
+    rec 207 done (4990s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (128321 params)
+    trained hua_learned: 86s (136737 params)
+    trained dilated: 85s (94860 params)
+    rec 200 done (5496s elapsed)
+    rec 210 done (5525s elapsed)
+    rec 112 done (5554s elapsed)
+    rec 221 done (5583s elapsed)
+    rec 233 done (5605s elapsed)
+    rec 122 done (5634s elapsed)
+    rec 100 done (5664s elapsed)
+    rec 205 done (5694s elapsed)
+    rec 207 done (5721s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.08
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (111937 params)
+    trained hua_learned: 86s (114097 params)
+    trained dilated: 85s (94860 params)
+    rec 200 done (6221s elapsed)
+    rec 210 done (6245s elapsed)
+    rec 112 done (6269s elapsed)
+    rec 221 done (6294s elapsed)
+    rec 233 done (6319s elapsed)
+    rec 122 done (6344s elapsed)
+    rec 100 done (6369s elapsed)
+    rec 205 done (6394s elapsed)
+    rec 207 done (6419s elapsed)
+
+=== fold 3: train 35 rec / 28000 win  | test 9 rec ===
+  K-SVD dictionary: 23s
+  CR=0.25 M=192: lam_ISTA=0.06 lam_FISTA=0.005
+    trained istanet: 196s (152856 params)
+    trained hua: 84s (144705 params)
+    trained hua_learned: 87s (163473 params)
+    trained dilated: 86s (94860 params)
+    rec 231 done (6946s elapsed)
+    rec 208 done (6964s elapsed)
+    rec 230 done (6982s elapsed)
+    rec 113 done (7002s elapsed)
+    rec 109 done (7018s elapsed)
+    rec 222 done (7043s elapsed)
+    rec 223 done (7061s elapsed)
+    rec 117 done (7081s elapsed)
+    rec 116 done (7100s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (128321 params)
+    trained hua_learned: 86s (136737 params)
+    trained dilated: 85s (94860 params)
+    rec 231 done (7605s elapsed)
+    rec 208 done (7631s elapsed)
+    rec 230 done (7657s elapsed)
+    rec 113 done (7685s elapsed)
+    rec 109 done (7710s elapsed)
+    rec 222 done (7740s elapsed)
+    rec 223 done (7765s elapsed)
+    rec 117 done (7794s elapsed)
+    rec 116 done (7821s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.08
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (111937 params)
+    trained hua_learned: 86s (114097 params)
+    trained dilated: 85s (94860 params)
+    rec 231 done (8320s elapsed)
+    rec 208 done (8344s elapsed)
+    rec 230 done (8368s elapsed)
+    rec 113 done (8393s elapsed)
+    rec 109 done (8418s elapsed)
+    rec 222 done (8442s elapsed)
+    rec 223 done (8467s elapsed)
+    rec 117 done (8492s elapsed)
+    rec 116 done (8517s elapsed)
+
+=== fold 4: train 36 rec / 28000 win  | test 8 rec ===
+  K-SVD dictionary: 23s
+  CR=0.25 M=192: lam_ISTA=0.06 lam_FISTA=0.005
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (144705 params)
+    trained hua_learned: 87s (163473 params)
+    trained dilated: 85s (94860 params)
+    rec 111 done (9043s elapsed)
+    rec 234 done (9061s elapsed)
+    rec 108 done (9085s elapsed)
+    rec 118 done (9104s elapsed)
+    rec 212 done (9125s elapsed)
+    rec 219 done (9141s elapsed)
+    rec 119 done (9159s elapsed)
+    rec 214 done (9177s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 194s (152856 params)
+    trained hua: 83s (128321 params)
+    trained hua_learned: 86s (136737 params)
+    trained dilated: 85s (94860 params)
+    rec 111 done (9683s elapsed)
+    rec 234 done (9709s elapsed)
+    rec 108 done (9738s elapsed)
+    rec 118 done (9766s elapsed)
+    rec 212 done (9796s elapsed)
+    rec 219 done (9819s elapsed)
+    rec 119 done (9844s elapsed)
+    rec 214 done (9871s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.08
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (111937 params)
+    trained hua_learned: 85s (114097 params)
+    trained dilated: 85s (94860 params)
+    rec 111 done (10370s elapsed)
+    rec 234 done (10394s elapsed)
+    rec 108 done (10419s elapsed)
+    rec 118 done (10443s elapsed)
+    rec 212 done (10468s elapsed)
+    rec 219 done (10493s elapsed)
+    rec 119 done (10519s elapsed)
+    rec 214 done (10544s elapsed)
+
+TOTAL 10544s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics.csv
+    rc=0 2026-10-09T00:03:17+03:00
+>>> [2/5] seed + sensing-matrix variability (fold 0, 3 extra seeds)
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  K-SVD dictionary: 23s
+  CR=0.25 M=192: lam_ISTA=0.06 lam_FISTA=0.005
+    trained istanet: 196s (152856 params)
+    trained hua: 84s (144705 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (446s elapsed)
+    rec 220 done (466s elapsed)
+    rec 106 done (487s elapsed)
+    rec 123 done (508s elapsed)
+    rec 203 done (526s elapsed)
+    rec 215 done (549s elapsed)
+    rec 115 done (568s elapsed)
+    rec 101 done (590s elapsed)
+    rec 202 done (611s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 195s (152856 params)
+    trained hua: 84s (128321 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (1029s elapsed)
+    rec 220 done (1057s elapsed)
+    rec 106 done (1085s elapsed)
+    rec 123 done (1114s elapsed)
+    rec 203 done (1143s elapsed)
+    rec 215 done (1173s elapsed)
+    rec 115 done (1200s elapsed)
+    rec 101 done (1229s elapsed)
+    rec 202 done (1258s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.08
+    trained istanet: 194s (152856 params)
+    trained hua: 83s (111937 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (1672s elapsed)
+    rec 220 done (1696s elapsed)
+    rec 106 done (1720s elapsed)
+    rec 123 done (1745s elapsed)
+    rec 203 done (1769s elapsed)
+    rec 215 done (1794s elapsed)
+    rec 115 done (1819s elapsed)
+    rec 101 done (1843s elapsed)
+    rec 202 done (1868s elapsed)
+
+TOTAL 1868s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics.csv
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  K-SVD dictionary: 22s
+  CR=0.25 M=192: lam_ISTA=0.06 lam_FISTA=0.005
+    trained istanet: 196s (152856 params)
+    trained hua: 84s (144705 params)
+    trained dilated: 86s (94860 params)
+    rec 103 done (444s elapsed)
+    rec 220 done (465s elapsed)
+    rec 106 done (485s elapsed)
+    rec 123 done (506s elapsed)
+    rec 203 done (525s elapsed)
+    rec 215 done (547s elapsed)
+    rec 115 done (567s elapsed)
+    rec 101 done (590s elapsed)
+    rec 202 done (610s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (128321 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (1029s elapsed)
+    rec 220 done (1057s elapsed)
+    rec 106 done (1086s elapsed)
+    rec 123 done (1115s elapsed)
+    rec 203 done (1143s elapsed)
+    rec 215 done (1173s elapsed)
+    rec 115 done (1200s elapsed)
+    rec 101 done (1230s elapsed)
+    rec 202 done (1259s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.06
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (111937 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (1671s elapsed)
+    rec 220 done (1695s elapsed)
+    rec 106 done (1720s elapsed)
+    rec 123 done (1745s elapsed)
+    rec 203 done (1770s elapsed)
+    rec 215 done (1795s elapsed)
+    rec 115 done (1820s elapsed)
+    rec 101 done (1844s elapsed)
+    rec 202 done (1869s elapsed)
+
+TOTAL 1869s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics.csv
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  K-SVD dictionary: 22s
+  CR=0.25 M=192: lam_ISTA=0.06 lam_FISTA=0.005
+    trained istanet: 196s (152856 params)
+    trained hua: 84s (144705 params)
+    trained dilated: 86s (94860 params)
+    rec 103 done (444s elapsed)
+    rec 220 done (464s elapsed)
+    rec 106 done (484s elapsed)
+    rec 123 done (505s elapsed)
+    rec 203 done (524s elapsed)
+    rec 215 done (546s elapsed)
+    rec 115 done (566s elapsed)
+    rec 101 done (588s elapsed)
+    rec 202 done (608s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 195s (152856 params)
+    trained hua: 84s (128321 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (1028s elapsed)
+    rec 220 done (1056s elapsed)
+    rec 106 done (1084s elapsed)
+    rec 123 done (1113s elapsed)
+    rec 203 done (1141s elapsed)
+    rec 215 done (1172s elapsed)
+    rec 115 done (1199s elapsed)
+    rec 101 done (1229s elapsed)
+    rec 202 done (1257s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.08
+    trained istanet: 195s (152856 params)
+    trained hua: 83s (111937 params)
+    trained dilated: 85s (94860 params)
+    rec 103 done (1670s elapsed)
+    rec 220 done (1694s elapsed)
+    rec 106 done (1718s elapsed)
+    rec 123 done (1743s elapsed)
+    rec 203 done (1768s elapsed)
+    rec 215 done (1793s elapsed)
+    rec 115 done (1817s elapsed)
+    rec 101 done (1842s elapsed)
+    rec 202 done (1866s elapsed)
+
+TOTAL 1866s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics.csv
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  CR=0.25 M=192: lam_ISTA=0.06 lam_FISTA=0.005
+    trained istanet: 196s (152856 params)
+    rec 103 done (253s elapsed)
+    rec 220 done (270s elapsed)
+    rec 106 done (287s elapsed)
+    rec 123 done (305s elapsed)
+    rec 203 done (321s elapsed)
+    rec 215 done (341s elapsed)
+    rec 115 done (357s elapsed)
+    rec 101 done (377s elapsed)
+    rec 202 done (395s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 195s (152856 params)
+    rec 103 done (644s elapsed)
+    rec 220 done (670s elapsed)
+    rec 106 done (696s elapsed)
+    rec 123 done (723s elapsed)
+    rec 203 done (749s elapsed)
+    rec 215 done (777s elapsed)
+    rec 115 done (802s elapsed)
+    rec 101 done (829s elapsed)
+    rec 202 done (856s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.06
+    trained istanet: 195s (152856 params)
+    rec 103 done (1098s elapsed)
+    rec 220 done (1120s elapsed)
+    rec 106 done (1142s elapsed)
+    rec 123 done (1164s elapsed)
+    rec 203 done (1186s elapsed)
+    rec 215 done (1209s elapsed)
+    rec 115 done (1231s elapsed)
+    rec 101 done (1253s elapsed)
+    rec 202 done (1276s elapsed)
+
+TOTAL 1276s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics.csv
+
+=== fold 0: train 35 rec / 28000 win  | test 9 rec ===
+  CR=0.25 M=192: lam_ISTA=0.12 lam_FISTA=0.01
+    trained istanet: 196s (152856 params)
+    rec 103 done (253s elapsed)
+    rec 220 done (270s elapsed)
+    rec 106 done (287s elapsed)
+    rec 123 done (305s elapsed)
+    rec 203 done (321s elapsed)
+    rec 215 done (341s elapsed)
+    rec 115 done (358s elapsed)
+    rec 101 done (377s elapsed)
+    rec 202 done (394s elapsed)
+  CR=0.5 M=128: lam_ISTA=0.2 lam_FISTA=0.02
+    trained istanet: 194s (152856 params)
+    rec 103 done (642s elapsed)
+    rec 220 done (667s elapsed)
+    rec 106 done (692s elapsed)
+    rec 123 done (718s elapsed)
+    rec 203 done (744s elapsed)
+    rec 215 done (772s elapsed)
+    rec 115 done (796s elapsed)
+    rec 101 done (823s elapsed)
+    rec 202 done (849s elapsed)
+  CR=0.75 M=64: lam_ISTA=0.2 lam_FISTA=0.12
+    trained istanet: 195s (152856 params)
+    rec 103 done (1091s elapsed)
+    rec 220 done (1112s elapsed)
+    rec 106 done (1134s elapsed)
+    rec 123 done (1156s elapsed)
+    rec 203 done (1179s elapsed)
+    rec 215 done (1201s elapsed)
+    rec 115 done (1224s elapsed)
+    rec 101 done (1246s elapsed)
+    rec 202 done (1268s elapsed)
+
+TOTAL 1268s -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/cv_metrics.csv
+    rc=0 2026-10-09T02:19:14+03:00
+>>> [3/5] quantisation / energy / complexity + ablation
+== (A)+(B) quantisation / energy / complexity ==
+  CR=0.75 gaussian      bits=None PRDN= 12.85 rate=   2902 bps
+  CR=0.75 gaussian      bits=12   PRDN= 11.02 rate=   1102 bps
+  CR=0.75 gaussian      bits=10   PRDN= 10.79 rate=    922 bps
+  CR=0.75 gaussian      bits=8    PRDN= 10.95 rate=    742 bps
+  CR=0.75 gaussian      bits=6    PRDN= 11.01 rate=    562 bps
+  CR=0.75 gaussian      bits=4    PRDN= 14.29 rate=    382 bps
+  CR=0.75 bernoulli     bits=None PRDN= 13.01 rate=   2902 bps
+  CR=0.75 bernoulli     bits=12   PRDN= 13.05 rate=   1102 bps
+  CR=0.75 bernoulli     bits=10   PRDN= 13.17 rate=    922 bps
+  CR=0.75 bernoulli     bits=8    PRDN= 13.23 rate=    742 bps
+  CR=0.75 bernoulli     bits=6    PRDN= 13.48 rate=    562 bps
+  CR=0.75 bernoulli     bits=4    PRDN= 15.39 rate=    382 bps
+  CR=0.75 sparse_binary bits=None PRDN=111.06 rate=   2902 bps
+  CR=0.75 sparse_binary bits=12   PRDN=107.62 rate=   1102 bps
+  CR=0.75 sparse_binary bits=10   PRDN=105.95 rate=    922 bps
+  CR=0.75 sparse_binary bits=8    PRDN=137.36 rate=    742 bps
+  CR=0.75 sparse_binary bits=6    PRDN=107.97 rate=    562 bps
+  CR=0.75 sparse_binary bits=4    PRDN=130.64 rate=    382 bps
+== (C) ablation ==
+  CR=0.25 stages= 1  PRDN= 22.86
+  CR=0.25 stages= 2  PRDN= 11.84
+  CR=0.25 stages= 4  PRDN=  5.61
+  CR=0.25 stages= 8  PRDN=  6.59
+  CR=0.25 stages=12  PRDN=  6.22
+  CR=0.5 stages= 1  PRDN= 28.83
+  CR=0.5 stages= 2  PRDN= 14.64
+  CR=0.5 stages= 4  PRDN=  8.08
+  CR=0.5 stages= 8  PRDN=  7.60
+  CR=0.5 stages=12  PRDN=  6.85
+  CR=0.75 stages= 1  PRDN= 39.33
+  CR=0.75 stages= 2  PRDN= 22.83
+  CR=0.75 stages= 4  PRDN= 14.32
+  CR=0.75 stages= 8  PRDN= 10.74
+  CR=0.75 stages=12  PRDN= 11.96
+    rc=0 2026-10-09T03:59:00+03:00
+>>> [4/5] cross-database (train MIT-BIH -> test PTB)
+downloading PTB subset ...
+Generating record list for: patient001/s0010_re
+Generating list of all files for: patient001/s0010_re
+Downloading files...
+Finished downloading files
+Generating record list for: patient001/s0014lre
+Generating list of all files for: patient001/s0014lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient001/s0016lre
+Generating list of all files for: patient001/s0016lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient002/s0015lre
+Generating list of all files for: patient002/s0015lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient003/s0017lre
+Generating list of all files for: patient003/s0017lre
+Downloading files...
+    skip patient003/s0017lre: ('Connection broken: IncompleteRead(2211474 bytes read, 553326 more expected)', IncompleteRead(2211474 bytes read, 553326 more expected))
+Generating record list for: patient004/s0020are
+Generating list of all files for: patient004/s0020are
+Downloading files...
+Finished downloading files
+Generating record list for: patient004/s0020bre
+Generating list of all files for: patient004/s0020bre
+Downloading files...
+Finished downloading files
+Generating record list for: patient005/s0021are
+Generating list of all files for: patient005/s0021are
+Downloading files...
+Finished downloading files
+Generating record list for: patient005/s0021bre
+Generating list of all files for: patient005/s0021bre
+Downloading files...
+Finished downloading files
+Generating record list for: patient005/s0025lre
+Generating list of all files for: patient005/s0025lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient005/s0031lre
+Generating list of all files for: patient005/s0031lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient005/s0101lre
+Generating list of all files for: patient005/s0101lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient006/s0022lre
+Generating list of all files for: patient006/s0022lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient006/s0027lre
+Generating list of all files for: patient006/s0027lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient006/s0064lre
+Generating list of all files for: patient006/s0064lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient007/s0026lre
+Generating list of all files for: patient007/s0026lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient007/s0029lre
+Generating list of all files for: patient007/s0029lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient007/s0038lre
+Generating list of all files for: patient007/s0038lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient007/s0078lre
+Generating list of all files for: patient007/s0078lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient008/s0028lre
+Generating list of all files for: patient008/s0028lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient008/s0037lre
+Generating list of all files for: patient008/s0037lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient008/s0068lre
+Generating list of all files for: patient008/s0068lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient009/s0035_re
+Generating list of all files for: patient009/s0035_re
+Downloading files...
+Finished downloading files
+Generating record list for: patient010/s0036lre
+Generating list of all files for: patient010/s0036lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient010/s0042lre
+Generating list of all files for: patient010/s0042lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient010/s0061lre
+Generating list of all files for: patient010/s0061lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient011/s0039lre
+Generating list of all files for: patient011/s0039lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient011/s0044lre
+Generating list of all files for: patient011/s0044lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient011/s0049lre
+Generating list of all files for: patient011/s0049lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient011/s0067lre
+Generating list of all files for: patient011/s0067lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient012/s0043lre
+Generating list of all files for: patient012/s0043lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient012/s0050lre
+Generating list of all files for: patient012/s0050lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient013/s0045lre
+Generating list of all files for: patient013/s0045lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient013/s0051lre
+Generating list of all files for: patient013/s0051lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient013/s0072lre
+Generating list of all files for: patient013/s0072lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient014/s0046lre
+Generating list of all files for: patient014/s0046lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient014/s0056lre
+Generating list of all files for: patient014/s0056lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient014/s0071lre
+Generating list of all files for: patient014/s0071lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient015/s0047lre
+Generating list of all files for: patient015/s0047lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient015/s0057lre
+Generating list of all files for: patient015/s0057lre
+Downloading files...
+Finished downloading files
+Generating record list for: patient015/s0152lre
+Generating list of all files for: patient015/s0152lre
+Downloading files...
+Finished downloading files
+PTB test records: 40  windows: 6135
+  CR=0.25: trained ['istanet', 'dilated', 'hua']
+  CR=0.5: trained ['istanet', 'dilated', 'hua']
+  CR=0.75: trained ['istanet', 'dilated', 'hua']
+done -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/results_v2/crossdb.csv
+    rc=0 2026-10-09T06:06:13+03:00
+>>> [5/7] training-budget control (fairness of re-implemented baselines)
+  CR=0.25 istanet       25ep  PRD=  4.52  (196s)
+  CR=0.25 istanet       50ep  PRD=  3.22  (389s)
+  CR=0.25 istanet      100ep  PRD=  2.89  (776s)
+  CR=0.25 hua           25ep  PRD=  3.67  (83s)
+  CR=0.25 hua           50ep  PRD=  2.91  (167s)
+  CR=0.25 hua          100ep  PRD=  2.53  (334s)
+  CR=0.25 hua_learned   25ep  PRD=  4.54  (87s)
+  CR=0.25 hua_learned   50ep  PRD=  2.22  (173s)
+  CR=0.25 hua_learned  100ep  PRD=  1.67  (346s)
+  CR=0.25 dilated       25ep  PRD=  2.87  (85s)
+  CR=0.25 dilated       50ep  PRD=  2.40  (170s)
+  CR=0.25 dilated      100ep  PRD=  2.28  (339s)
+  CR=0.5 istanet       25ep  PRD=  4.58  (194s)
+  CR=0.5 istanet       50ep  PRD=  5.02  (387s)
+  CR=0.5 istanet      100ep  PRD=  3.40  (773s)
+  CR=0.5 hua           25ep  PRD=  5.34  (83s)
+  CR=0.5 hua           50ep  PRD=  4.00  (165s)
+  CR=0.5 hua          100ep  PRD=  3.63  (331s)
+  CR=0.5 hua_learned   25ep  PRD=  4.90  (86s)
+  CR=0.5 hua_learned   50ep  PRD=  3.54  (171s)
+  CR=0.5 hua_learned  100ep  PRD=  2.16  (342s)
+  CR=0.5 dilated       25ep  PRD=  3.75  (85s)
+  CR=0.5 dilated       50ep  PRD=  3.34  (169s)
+  CR=0.5 dilated      100ep  PRD=  3.20  (338s)
+  CR=0.75 istanet       25ep  PRD=  8.13  (195s)
+  CR=0.75 istanet       50ep  PRD=  6.79  (389s)
+  CR=0.75 istanet      100ep  PRD=  5.80  (774s)
+  CR=0.75 hua           25ep  PRD=  8.68  (82s)
+  CR=0.75 hua           50ep  PRD=  7.50  (165s)
+  CR=0.75 hua          100ep  PRD=  7.03  (331s)
+  CR=0.75 hua_learned   25ep  PRD=  6.68  (85s)
+  CR=0.75 hua_learned   50ep  PRD=  5.11  (170s)
+  CR=0.75 hua_learned  100ep  PRD=  4.66  (339s)
+  CR=0.75 dilated       25ep  PRD=  6.17  (84s)
+  CR=0.75 dilated       50ep  PRD=  5.95  (169s)
+  CR=0.75 dilated      100ep  PRD=  5.60  (337s)
+    rc=0 2026-10-09T08:42:49+03:00
+>>> [6/7] figures
+  fig_main
+  fig_rate
+  fig_examples_cr075
+figures -> /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/resubmission/manuscript
+    rc=0 2026-10-09T08:46:37+03:00
+>>> [7/7] statistics + tables
+  cr      method  PRDN_mean   PRDN_sd  PRDN_med  SNR_mean   SNR_sd  n_rec
+0.25        bsbl   2.836353  1.121156  2.548100 33.062827 2.525082     44
+0.25     dilated   3.923226  1.632315  3.649300 29.634611 2.957905     44
+0.25       fista   4.737411  1.941775  4.302850 28.089727 3.112700     44
+0.25         hua   3.992974  1.662910  3.860750 29.647249 3.402587     44
+0.25 hua_learned   5.471855  2.623496  4.736350 27.039280 3.988020     44
+0.25        ista   7.934052  2.428773  7.473950 23.252482 2.208649     44
+0.25     istanet   6.118495  2.168077  5.695300 25.475450 2.403659     44
+0.25    ksvd_omp   4.307965  1.955850  3.987200 29.177322 3.687978     44
+0.25         omp   6.082389  2.999918  5.437500 26.441245 3.862915     44
+0.50        bsbl   4.489769  1.849611  4.139150 28.568207 3.233044     44
+0.50     dilated   5.267095  2.183697  4.834400 27.061113 2.909548     44
+0.50       fista   9.491943  3.422529  9.103088 21.747153 2.752087     44
+0.50         hua   6.153994  2.713770  5.740287 25.880590 3.567741     44
+0.50 hua_learned   6.005161  2.635251  5.269800 26.033266 3.500143     44
+0.50        ista  13.943242  3.479926 13.278113 18.022378 1.861720     44
+0.50     istanet   8.352906  3.126320  7.325975 22.767851 2.572171     44
+0.50    ksvd_omp   7.219481  3.478934  6.542562 24.678770 3.875522     44
+0.50         omp  10.635255  4.746668  9.633350 21.359716 3.386007     44
+0.75        bsbl  13.874341  5.464772 13.246400 18.685761 3.218618     44
+0.75     dilated   9.356049  3.639166  8.660850 21.915058 2.712200     44
+0.75       fista  33.748576  6.621611 33.012687 10.216264 1.718226     44
+0.75         hua  10.796286  3.974841  9.833075 20.555837 2.784408     44
+0.75 hua_learned   8.221082  3.633787  7.691750 23.150091 3.205051     44
+0.75        ista  44.894447  6.148103 44.282650  7.609306 1.241928     44
+0.75     istanet  13.197611  4.070638 12.248675 18.555701 2.236172     44
+0.75    ksvd_omp  15.987427  4.569175 14.966625 16.952253 2.202189     44
+0.75         omp  35.998824 10.203238 35.325000 10.678474 2.500934     44
+
+  cr reference      method  median_diff_PRDN      ci_lo      ci_hi        p_raw       p_holm  n_records                   verdict
+0.25   istanet     dilated          2.070912   1.915850   2.221400 1.136868e-13 9.094947e-13         44              other better
+0.25   istanet       fista          1.310850   1.120700   1.552050 1.136868e-13 9.094947e-13         44              other better
+0.25   istanet         hua          1.991050   1.845000   2.199700 1.136868e-13 9.094947e-13         44              other better
+0.25   istanet        ista         -1.779738  -2.042087  -1.555100 1.136868e-13 9.094947e-13         44            learned better
+0.25   istanet    ksvd_omp          1.704000   1.521074   2.009900 1.136868e-13 9.094947e-13         44              other better
+0.25   istanet        bsbl          3.096850   2.814500   3.493400 1.591616e-12 4.774847e-12         44              other better
+0.25   istanet hua_learned          0.776400   0.087500   1.267287 6.051695e-03 1.210339e-02         44              other better
+0.25   istanet         omp          0.124762  -0.274475   0.424050 5.284287e-01 5.284287e-01         44 no significant difference
+0.50   istanet        bsbl          3.549000   2.977700   4.393025 1.136868e-13 9.094947e-13         44              other better
+0.50   istanet     dilated          3.038000   2.324825   3.625650 1.136868e-13 9.094947e-13         44              other better
+0.50   istanet        ista         -5.623650  -6.173800  -5.318125 1.136868e-13 9.094947e-13         44            learned better
+0.50   istanet hua_learned          2.395450   1.571800   2.959000 8.662937e-11 4.331469e-10         44              other better
+0.50   istanet         hua          2.307700   1.510025   2.755200 5.659331e-10 2.263732e-09         44              other better
+0.50   istanet         omp         -2.339700  -3.337100  -1.012800 8.235588e-08 2.470676e-07         44            learned better
+0.50   istanet       fista         -1.046062  -1.739925  -0.560850 1.442520e-06 2.885040e-06         44            learned better
+0.50   istanet    ksvd_omp          1.159300   0.210550   2.063900 3.628418e-03 3.628418e-03         44              other better
+0.75   istanet     dilated          3.851300   3.466800   4.111250 1.136868e-13 9.094947e-13         44              other better
+0.75   istanet       fista        -20.419450 -21.369900 -18.920600 1.136868e-13 9.094947e-13         44            learned better
+0.75   istanet hua_learned          4.953900   3.973600   5.598625 1.136868e-13 9.094947e-13         44              other better
+0.75   istanet        ista        -31.735437 -32.986612 -30.164200 1.136868e-13 9.094947e-13         44            learned better
+0.75   istanet         omp        -22.291663 -24.096288 -19.536100 1.136868e-13 9.094947e-13         44            learned better
+0.75   istanet    ksvd_omp         -2.702750  -3.271387  -2.232500 1.136868e-12 3.410605e-12         44            learned better
+0.75   istanet         hua          2.447750   2.042350   2.773300 3.751666e-12 7.503331e-12         44              other better
+0.75   istanet        bsbl         -0.143912  -1.614050   1.064500 5.670263e-01 5.670263e-01         44 no significant difference
+
+wrote summary_by_method.csv, significance.csv, table_main.tex
+  variability across seed -> variability_seed.csv
+  variability across phi -> variability_phi.csv
+wrote supplement_body.tex and table_main_wrapper.tex
+wrote /home/pardus/Papers/Asus_Pardus_0027_ECG_CS/IEEE_Signal_Processing_Letters/resubmission/manuscript/numbers.tex (109 macros)
+    % auto-generated by code_v2/make_numbers.py -- do not edit
+    \newcommand{\NRECORDS}{44}
+    \newcommand{\NFOLDS}{5}
+    \newcommand{\NWINTOT}{1\,631\,520}
+    \newcommand{\prdFistaA}{4.73}
+    \newcommand{\snrFistaA}{28.10}
+    \newcommand{\prdOmpA}{6.08}
+    \newcommand{\snrOmpA}{26.44}
+    \newcommand{\prdBsblA}{2.82}
+    \newcommand{\snrBsblA}{33.09}
+    \newcommand{\prdKsvdA}{4.30}
+    \newcommand{\snrKsvdA}{29.19}
+    rc=0 2026-10-09T08:46:38+03:00
+=== DONE 2026-10-09T08:46:38+03:00 ===
